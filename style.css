@@ -1,1 +1,27 @@
-h
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body 
+   {
+   background-image: url("/img/bgBlue.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+} 
+</style>
+</head>
+<body>
+<h1> This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai</h1>
+<p>  This is the hub for websites that I have republished and Mods I made for Minecraft Bedrock Edition.</p>
+  <p> This the link to my remake of cookie clicker</p>
+<a href="https://funneljai212.github.io/cookie_clicker_2.048/">
+  <button style="color:Tomato;">Cookie clicker website</button>
+</a>
+<p> This the link to my remake of a gameboy advance website</p>
+  <a href="https://funneljai1.github.io/gba/">
+  <button style="color:DodgerBlue;"> GBA website</button>
+</a>
+</body>
+</html>
