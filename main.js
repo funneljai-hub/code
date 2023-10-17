@@ -14,6 +14,5 @@ function black() {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
 }
 function bye() {
-alert("#0xff0000 bye bye");
-Window.close();
+alert("bye bye") && window.close();
 }
