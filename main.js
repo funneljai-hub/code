@@ -23,7 +23,7 @@ function first() {
 }
 
 document.cookie = "background=x;";
-function body() {
+function b() {
 if (background=1) {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
 } else {
