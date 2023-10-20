@@ -1,22 +1,22 @@
 function gold() {
 document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
-setCookie("background", 2, 30);
+setCookie("background", gold, 30);
 }
 function blue() {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
-setCookie("background", 1 ,30);
+setCookie("background", blue ,30);
 }
 function red() {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
-setCookie("background", 3, 30);
+setCookie("background", red, 30);
 }
 function white() {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
-setCookie("background", 4, 30);
+setCookie("background", white, 30);
 }
 function black() {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
-setCookie("background", 0, 30);
+setCookie("background", black, 30);
 }
 function first() {
   document.body.write("hello this is my javascript");
@@ -24,19 +24,20 @@ function first() {
 
 document.cookie = "background=x;";
 function b() {
-if (background=0) {
+if ("background=black") {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
 }
-if (background=1) {
+if ("background=blue") {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
+alert("background=blue");
 } 
-if (background=2) {
+if ("background=gold") {
 document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
 }
-if (background=3) {
+if ("background=red") {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
 }
-if (background=4) {
+if ("background=white") {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
 }
 }
