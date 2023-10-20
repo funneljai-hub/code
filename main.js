@@ -22,7 +22,6 @@ function first() {
   document.body.write("hello this is my javascript");
 }
 
-document.cookie = "background=x;";
 function b() {
 if (background=black) {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
@@ -36,7 +35,7 @@ document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
 if (background=red) {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
 }
-if ("background=white") {
+if (background=white) {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
 }
 }
