@@ -1,22 +1,22 @@
 function gold() {
 document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
-document.cookie = "background=gold;path=/";
+document.cookie = "background=gold";
 }
 function blue() {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
-document.cookie = "background=blue;path=/";
+document.cookie = "background=blue";
 }
 function red() {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
-document.cookie = "background=red;path=/";
+document.cookie = "background=red";
 }
 function white() {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
-document.cookie = "background=white;path=/";
+document.cookie = "background=white";
 }
 function black() {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
-document.cookie = "background=black;path=/";
+document.cookie = "background=black";
 }
 function first() {
   document.body.write("hello this is my javascript");
