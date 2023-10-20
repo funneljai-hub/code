@@ -1,22 +1,22 @@
 function gold() {
 document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
-setCookie("background", gold, 30);
+document.cookie = "background=gold";
 }
 function blue() {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
-setCookie("background", blue ,30);
+document.cookie = "background=blue";
 }
 function red() {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
-setCookie("background", red, 30);
+document.cookie = "background=red";
 }
 function white() {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
-setCookie("background", white, 30);
+document.cookie = "background=white";
 }
 function black() {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
-setCookie("background", black, 30);
+document.cookie = "background=black";
 }
 function first() {
   document.body.write("hello this is my javascript");
@@ -29,7 +29,6 @@ document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
 }
 if ("background=blue") {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
-alert("background=blue");
 } 
 if ("background=gold") {
 document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
