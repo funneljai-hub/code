@@ -24,16 +24,16 @@ function first() {
 
 document.cookie = "background=x;";
 function b() {
-if ("background=black") {
+if (background=black) {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
 }
-if ("background=blue") {
+if (background=blue) {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
 } 
-if ("background=gold") {
+if (background=gold) {
 document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
 }
-if ("background=red") {
+if (background=red) {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
 }
 if ("background=white") {
