@@ -35,5 +35,5 @@ document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
 if (background=red) {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
 } 
-alert(background="");
+alert(background);
 }
