@@ -28,7 +28,7 @@ function first() {
   document.body.write("hello this is my javascript");
 }
 document.cookie = "background=x";
-function back() {
+function b() {
 if (background=0) {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
 }
