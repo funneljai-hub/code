@@ -23,19 +23,19 @@ function first() {
 }
 document.cookie = "background=x";
 function b() {
-if (document.cookie.background=x) {
+if ('background'=0) {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
 }
-if (document.cookie.background=2) {
+if ('background'=0) {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
 }
-if (document.cookie.background=1) {
+if ('background'=0) {
 document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
 }
-if (document.cookie.background=3) {
+if ('background'=0) {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
 } 
-if (document.cookie.background=4) {
+if ('background'=4) {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
 } 
 alert(background);
