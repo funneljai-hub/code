@@ -28,19 +28,19 @@ function first() {
   document.body.write("hello this is my javascript");
 }
 function b() {
-if (background -1<0<1) {
+if (background = 0) {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
 }
-if (background 1<2<3) {
+if (background =2) {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
 }
-if (background 0<1<2) {
+if (background =1) {
 document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
 }
-if (background 2<3<4) {
+if (background =3) {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
 } 
-if (background 3<4<5) {
+if (background =4) {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
 } 
 alert(background);
