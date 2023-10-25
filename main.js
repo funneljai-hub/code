@@ -22,7 +22,7 @@ document.cookie ="background=0;path=/main/";
 function first() {
   document.body.write("hello this is my javascript");
 }
-document.cookie ="background=x"
+document.cookie ="background=x;path=/main/"
 function b() {
 if (background == 0) {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
