@@ -15,23 +15,23 @@ function getCookie(cookieName) {
       }
 function gold() {
 document.body.style.backgroundImage = "url('assets/img/bgGold.jpg')";
-document.cookie = "background=1";
+document.cookie = "background=1; path=/"+ encodeURIComponent("background");
 }
 function blue() {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
-document.cookie = "background=2";
+document.cookie = "background=2"+ encodeURIComponent("background");
 }
 function red() {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
-document.cookie = "background=3";
+document.cookie = "background=3"+ encodeURIComponent("background");
 }
 function white() {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
-document.cookie = "background=4";
+document.cookie = "background=4"+ encodeURIComponent("background");
 }
 function black() {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
-document.cookie = "background=0";
+document.cookie = "background=0"+ encodeURIComponent("background");
 }
 function first() {
   document.body.write("hello this is my javascript");
