@@ -36,7 +36,6 @@ document.cookie = "background=0";
 function first() {
   document.body.write("hello this is my javascript");
 }
-document.cookie = "background=x";
 let background = getCookie("background");
 function b() {
 if (background == 0) {
