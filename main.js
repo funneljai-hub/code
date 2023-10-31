@@ -19,19 +19,19 @@ document.cookie = "background=1; path=/";
 }
 function blue() {
 document.body.style.backgroundImage = "url('assets/img/bgBlue.jpg')";
-document.cookie = "background=2";
+document.cookie = "background=2; path=/";
 }
 function red() {
 document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
-document.cookie = "background=3";
+document.cookie = "background=3; path=/";
 }
 function white() {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
-document.cookie = "background=4";
+document.cookie = "background=4; path=/";
 }
 function black() {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
-document.cookie = "background=0";
+document.cookie = "background=0; path=/";
 }
 function first() {
   document.body.write("hello this is my javascript");
