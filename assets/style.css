@@ -79,11 +79,17 @@ background-image: url("img/bgBlack.jpg");
 
 }
 #gd {
-color: Gold;  
+background-color: Gold;  
 }
 #be {
-color: Blue;  
+background-color: Blue;  
 }
 #rd {
-color: Red;  
+background-color: Red;  
+}
+#we {
+}
+#bk {
+color: White ;
+background-color: Black;
 }
