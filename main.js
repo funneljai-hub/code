@@ -53,5 +53,4 @@ document.body.style.backgroundImage = "url('assets/img/bgRed.jpg')";
 if (background == 4) {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
 } 
-alert(background);
 }
