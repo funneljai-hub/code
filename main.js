@@ -1,3 +1,4 @@
+window.onload="b()";
 function getCookie(cookieName) {
          let cookies = document.cookie;
          let cookieArray = cookies.split("; ");
