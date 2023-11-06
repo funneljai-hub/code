@@ -87,7 +87,7 @@ document.getElementById("lg").innerHTML = "ラング";
 document.getElementById("en").innerHTML = "英語";
 document.getElementById("es").innerHTML = "スペイン語";
 document.getElementById("jp").innerHTML = "日本人";
-document.getElementById("h1").innerHTML = "これは、Minecraft Bedrock Edition 用に作成された MOD と、Funneljai によってリメイクされた Web サイトのハブです。";
+document.getElementById("h1").innerHTML = "これは、マインクラフト 岩盤 版 用に作成された 改造 と、ファンネルジャイ によってリメイクされた ウェブ サイトのハブです。";
 document.cookie = "lang=2; path=/";
 }
 function eng() {
@@ -139,7 +139,7 @@ document.getElementById("lg").innerHTML = "ラング";
 document.getElementById("en").innerHTML = "英語";
 document.getElementById("es").innerHTML = "スペイン語";
 document.getElementById("jp").innerHTML = "日本人";
-document.getElementById("h1").innerHTML = "これは、Minecraft Bedrock Edition 用に作成された MOD と、Funneljai によってリメイクされた Web サイトのハブです。";
+document.getElementById("h1").innerHTML = "これは、マインクラフト 岩盤 版 用に作成された 改造 と、ファンネルジャイ によってリメイクされた ウェブ サイトのハブです。";
 }
 
 let background = getCookie("background");
