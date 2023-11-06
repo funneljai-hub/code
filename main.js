@@ -167,7 +167,9 @@ if (lang == 1) {
 ES();
 }
 if (lang == 2) {
-JP();
+JP(); 
 }
+console.log(lang);
+console.log(background);
 }
 
