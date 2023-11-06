@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html onload="b()">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" media="screen" href="assets/style.css" />
 <script type="text/javascript" src="main.js"></script>
-<script>
-b();
-</script>
 </head>
-<body onload="b()" id=body>
+<body id="body" onload="b()">
   <div class="navbar">
-  <a href="index.html">Home</a>
+  <a id="home" href="index.html">Home</a>
   <div class="dropdown">
-    <button class="dropbtn">links
+    <button id="ls" class="dropbtn">links
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="mods.html">mods</a>
-      <a href="websites.html">websites</a>
+      <a id="ms" href="mods.html">mods</a>
+      <a id="ws" href="websites.html">websites</a>
   </div>
  </div>
  <div class="dropdown">
-    <button class="dropbtn">backgrounds
+    <button id="bg" class="dropbtn">backgrounds
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -32,8 +29,18 @@ b();
       <a id="bk" onclick="black()">black</a>
   </div>
  </div>
+  <div class="dropdown">
+    <button id="lg" class="dropbtn">lang
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a id="en" onclick="EN()">EN</a>
+      <a id="es" onclick="ES()">ES</a>
+      <a id="jp" onclick="JP()">JP</a>
+  </div>
+ </div>
 </div>
-<h1 style="color:Tomato;" onclick="bye()"> This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai</h1>
+<h1 id="h1" style="color:Tomato;"> This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai</h1>
 <audio loop autoplay>
 <source src="anti.ogg" type="audio/ogg">
 </audio>
