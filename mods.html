@@ -6,27 +6,37 @@
 <script type="text/javascript" src="main.js"></script>
 </head>
 <body onload="b()" id="body">
-<div class="navbar">
-  <a href="index.html">Home</a>
+  <div class="navbar">
+  <a id="home" href="index.html">Home</a>
   <div class="dropdown">
-    <button class="dropbtn">links
+    <button id="ls" class="dropbtn">links
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="mods.html">mods</a>
-      <a href="websites.html">websites</a>
+      <a id="ms" href="mods.html">mods</a>
+      <a id="ws" href="websites.html">websites</a>
   </div>
  </div>
  <div class="dropdown">
-    <button class="dropbtn">backgrounds
+    <button id="bg" class="dropbtn">backgrounds
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a onclick="gold()">gold</a>
-      <a onclick="blue()">blue</a>
-      <a onclick="red()">red</a>
-      <a onclick="white()">white</a>
-      <a onclick="black()">black</a>
+      <a id="gd" onclick="gold()">gold</a>
+      <a id="be" onclick="blue()">blue</a>
+      <a id="rd" onclick="red()">red</a>
+      <a id="we" onclick="white()">white</a>
+      <a id="bk" onclick="black()">black</a>
+  </div>
+ </div>
+  <div class="dropdown">
+    <button id="lg" class="dropbtn">lang
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a id="en" onclick="EN()">EN</a>
+      <a id="es" onclick="ES()">ES</a>
+      <a id="jp" onclick="JP()">JP</a>
   </div>
  </div>
 </div>
