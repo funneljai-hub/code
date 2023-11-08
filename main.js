@@ -161,13 +161,13 @@ if (background == 4) {
 document.body.style.backgroundImage = "url('assets/img/bgWhite.jpg')";
 } 
 if (lang == 0) {
-EN();
+eng();
 }
 if (lang == 1) {
-ES();
+esp();
 }
 if (lang == 2) {
-JP(); 
+jap(); 
 }
 console.log(lang);
 console.log(background);
