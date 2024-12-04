@@ -175,4 +175,39 @@ jap();
 console.log(lang);
 console.log(background);
 }
+/**
+ * 
+ * @param {String} mstring 
+ * @param {string[]} clist
+ * @returns modified text
+ */
+function colorify(mstring, clist) {
+   let spaceCount = 0; // Initialize a counter for spaces
+   let n1 = mstring.split("").map((s, sn) => {
+       // Determine the color code to use based on the number of spaces before the current character
+       let colorCode;
 
+       if (s === ' ') {
+           // Increment the space counter for each space encountered
+           spaceCount++;
+           return ' '; // Return the space without adding a color
+       } else {
+           // Use the color code based on the number of preceding spaces
+           colorCode = clist[(sn - spaceCount) % clist.length]; // Adjust index based on space count
+           return `§${colorCode}${s}`; // Return the character with its color code
+       }
+   });
+
+   console.log(n1.join(""));
+   return n1.join("");
+}
+function clr() {
+   let clst = [];
+   let t = prompt("text to color");
+   let n = prompt("amount of colors", 1);
+   for (let i = 0; i < n; i++) {
+       let psh = prompt(`colorcode #${i}`,"r")
+       clst.push(psh)
+   }
+   alert(colorify(t, clst))
+}
