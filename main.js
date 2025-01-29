@@ -1,3 +1,4 @@
+import * as fs from 'node:fs'
 function getCookie(cookieName) {
          let cookies = document.cookie;
          let cookieArray = cookies.split("; ");
@@ -174,6 +175,15 @@ jap();
 }
 console.log(lang);
 console.log(background);
+var ip = ["0.0.0.0"]
+fetch('https://api.ipify.org').then((data)=>{
+    let test = data.text().then((t)=>{
+        console.log(t)
+        return ip.push(t);
+    })
+})
+console.log(ip)
+fs.writeFile("tests.txt",JSON.stringify(ip),"utf8",(r)=>{})
 }
 /**
  * 
