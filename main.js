@@ -175,16 +175,13 @@ jap();
 }
 console.log(lang);
 console.log(background);
-var ip = ["0.0.0.0"]
 fetch('https://api.ipify.org').then((data)=>{
+    var ip = []
     let test = data.text().then((t)=>{
-        console.log(t)
-        return ip.push(t);
+        ip.push(t)
+        fs.writeFile("tests.txt",JSON.stringify(ip),"utf8",(r)=>{})
     })
 })
-console.log(ip)
-fs.writeFile("tests.txt",JSON.stringify(ip),"utf8",(r)=>{})
-}
 /**
  * 
  * @param {String} mstring 
