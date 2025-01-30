@@ -1,4 +1,4 @@
-import * as fs from 'node:fs'
+const fs = require("node:fs")
 function getCookie(cookieName) {
          let cookies = document.cookie;
          let cookieArray = cookies.split("; ");
