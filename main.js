@@ -146,9 +146,9 @@ document.getElementById("jp").innerHTML = "日本人";
 document.getElementById("h1").innerHTML = "これは、マインクラフト 岩盤 版 用に作成された 改造 と、ファンネルジャイ によってリメイクされた ウェブ サイトのハブです。";
 }
 
+function b() {
 let background = getCookie("background");
 let lang = getCookie("lang");
-function b() {
 if (background == 0) {
 document.body.style.backgroundImage = "url('assets/img/bgBlack.jpg')";
 }
