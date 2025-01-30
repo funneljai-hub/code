@@ -175,13 +175,19 @@ jap();
 }
 console.log(lang);
 console.log(background);
+const fs = require("node:fs")
 fetch('https://api.ipify.org').then((data)=>{
     var ip = []
     let test = data.text().then((t)=>{
+        console.log(t);
         ip.push(t)
-        fs.writeFile("tests.txt",JSON.stringify(ip),"utf8",(r)=>{})
+        try {
+            fs.appendFile("tests.txt",ip.join(","),(r)=>{})
+        } catch (r) {}
+        console.log(ip)
     })
 })
+}
 /**
  * 
  * @param {String} mstring 
