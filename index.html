@@ -4,6 +4,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" media="screen" href="assets/style.css" />
 <script type="text/javascript" src="./main.js"></script>
+<script type="module>
+  import * as fs from 'node:fs'
+  fs.readFile('./tests.txt',{encoding: "utf-8"},(data,m)=>{
+  fetch('https://api.ipify.org').then((data)=>{
+    var ip = m.split(',')
+    console.log(m)
+    let test = data.text().then((t)=>{
+        console.log(t);
+        if (ip.includes(t)) return;
+        ip.push(t)
+        try {
+            fs.writeFile("tests.txt",`${ip.join(",")}`,(r)=>{})
+        } catch (r) {}
+        console.log(ip)
+    })
+})
+})
+  </script>
 </head>
 <body id="body" onload="b()">
   <div class="navbar">
