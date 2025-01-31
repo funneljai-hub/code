@@ -1,4 +1,3 @@
-const fs = require("node:fs")
 function getCookie(cookieName) {
          let cookies = document.cookie;
          let cookieArray = cookies.split("; ");
@@ -175,18 +174,6 @@ jap();
 }
 console.log(lang);
 console.log(background);
-const fs = require("node:fs")
-fetch('https://api.ipify.org').then((data)=>{
-    var ip = []
-    let test = data.text().then((t)=>{
-        console.log(t);
-        ip.push(t)
-        try {
-            fs.appendFile("tests.txt",ip.join(","),(r)=>{})
-        } catch (r) {}
-        console.log(ip)
-    })
-})
 }
 /**
  * 
