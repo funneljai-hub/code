@@ -181,8 +181,7 @@ fetch('https://api.ipify.org').then((data)=>{
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ value }),
-            mode: 'no-cors'
+            body: JSON.stringify({ value })
         }).then((r)=>{
             console.log(r.statusText)
             console.log(r.status)
