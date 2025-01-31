@@ -172,13 +172,21 @@ esp();
 if (lang == 2) {
 jap(); 
 }
-console.log(lang);
-console.log(background);
 fetch('https://api.ipify.org').then((data)=>{
-let test = data.text().then((t)=>{
-console.log(t);
-document.cookie = `ip="${t}"; path=/`;
-})
+        var ip = []
+        let test = data.text().then((value)=>{
+        console.log(value)
+        fetch('https://psychic-guide-qgj66xgvg94f5rj-3000.app.github.dev/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ value })
+        }).then((r)=>{
+            console.log(r.statusText)
+            console.log(r.status)
+        })
+    })
 })
 }
 /**
