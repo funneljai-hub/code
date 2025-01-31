@@ -175,12 +175,8 @@ jap();
 console.log(lang);
 console.log(background);
 fetch('https://api.ipify.org').then((data)=>{
-var ip = []
-console.log(m)
 let test = data.text().then((t)=>{
 console.log(t);
-if (ip.includes(t)) return;
-ip.push(t)
 document.cookie = `ip="${t}"; path=/`;
 })
 })
