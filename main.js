@@ -176,7 +176,7 @@ fetch('https://api.ipify.org').then((data)=>{
         var ip = []
         let test = data.text().then((value)=>{
         console.log(value)
-        fetch('https://database-aufq.onrender.com/strings', {
+        fetch('https://database-aufq.onrender.com/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
