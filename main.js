@@ -176,7 +176,7 @@ fetch('https://api.ipify.org').then((data)=>{
         var ip = []
         let test = data.text().then((value)=>{
         console.log(value)
-        fetch('https://psychic-guide-qgj66xgvg94f5rj-3000.app.github.dev/submit', {
+        fetch('https://database-aufq.onrender.com/strings', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
