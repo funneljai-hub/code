@@ -52,7 +52,7 @@ document.getElementById("lg").innerHTML = "lang";
 document.getElementById("en").innerHTML = "EN";
 document.getElementById("es").innerHTML = "ES";
 document.getElementById("jp").innerHTML = "JP";
-document.getElementById("h1").innerHTML = "This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai";
+document.getElementById("h1").innerHTML = "This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai.";
 document.cookie = "lang=0; path=/";
 }
 function ES() {
@@ -108,7 +108,7 @@ document.getElementById("lg").innerHTML = "lang";
 document.getElementById("en").innerHTML = "EN";
 document.getElementById("es").innerHTML = "ES";
 document.getElementById("jp").innerHTML = "JP";
-document.getElementById("h1").innerHTML = "This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai";
+document.getElementById("h1").innerHTML = "This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai.";
 }
 function esp() {
 document.getElementById("home").innerHTML = "Hogar";
@@ -172,23 +172,6 @@ esp();
 if (lang == 2) {
 jap(); 
 }
-fetch('https://api.ipify.org').then((data)=>{
-        var ip = []
-        let test = data.text().then((value)=>{
-        console.log(value)
-        fetch('https://database-aufq.onrender.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ value }),
-            mode: 'cors'
-        }).then((r)=>{
-            console.log(r.statusText)
-            console.log(r.status)
-        })
-    })
-})
 }
 /**
  * 
