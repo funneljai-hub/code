@@ -7,33 +7,40 @@
   <link rel="stylesheet" href="assets/style.css">
   <script src="./main.js" defer></script>
   <style>
-    /* Basic reset */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      padding-top: 42px; /* keeps content below fixed navbar */
     }
 
-    /* Navbar container */
+    /* Fixed compact navbar */
     .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       display: flex;
-      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
       background-color: #333;
-      overflow: hidden;
+      z-index: 1000;
+      height: 42px; /* slim height */
     }
 
-    /* Navbar links */
-    .navbar a, .dropbtn {
+    /* Main nav buttons */
+    .navbar a,
+    .dropbtn {
       color: white;
-      text-align: center;
-      padding: 14px 16px;
+      padding: 10px;
       text-decoration: none;
       background: none;
       border: none;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 14px;
     }
 
-    .navbar a:hover, .dropbtn:hover {
+    .navbar a:hover,
+    .dropbtn:hover {
       background-color: #575757;
     }
 
@@ -45,53 +52,59 @@
     .dropdown-content {
       display: none;
       position: absolute;
+      top: 100%; /* stack downward */
+      left: 0;
       background-color: #444;
-      min-width: 160px;
-      z-index: 1;
+      min-width: 140px;
+      z-index: 1001;
       flex-direction: column;
     }
 
     .dropdown-content a {
-      padding: 12px 16px;
+      padding: 10px;
+      font-size: 14px;
       display: block;
       text-align: left;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #575757;
     }
 
     .dropdown:hover .dropdown-content {
-      display: block;
+      display: flex;
     }
 
-    /* Mobile-friendly adjustments */
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-      }
-
-      .dropdown-content {
-        position: static;
-        display: none;
-        width: 100%;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: flex;
-      }
-
-      .navbar a, .dropbtn {
-        text-align: left;
-        width: 100%;
-      }
-    }
-
+    /* Headline */
     h1 {
       color: tomato;
-      padding: 16px;
+      padding: 12px;
+      font-size: 18px;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      .navbar a,
+      .dropbtn {
+        font-size: 12px;
+        padding: 8px;
+      }
+      .dropdown-content a {
+        font-size: 12px;
+        padding: 8px;
+      }
+      h1 {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body id="body" onload="b()">
   <div class="navbar">
     <a id="home" href="index.html">Home</a>
+
     <div class="dropdown">
       <button id="ls" class="dropbtn">Links ▾</button>
       <div class="dropdown-content">
@@ -100,6 +113,7 @@
         <a id="sl" href="social.html">Socials</a>
       </div>
     </div>
+
     <div class="dropdown">
       <button id="bg" class="dropbtn">Backgrounds ▾</button>
       <div class="dropdown-content">
@@ -110,6 +124,7 @@
         <a id="bk" onclick="black()">Black</a>
       </div>
     </div>
+
     <div class="dropdown">
       <button id="lg" class="dropbtn">Lang ▾</button>
       <div class="dropdown-content">
@@ -120,6 +135,8 @@
     </div>
   </div>
 
-  <h1 id="h1">This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai.</h1>
+  <h1 id="h1">
+    This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai.
+  </h1>
 </body>
 </html>
