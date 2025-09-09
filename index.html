@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html onload="b()">
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" media="screen" href="assets/style.css" />
-<script type="text/javascript" src="./main.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funneljai Hub</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="./main.js" defer></script>
 </head>
 <body id="body" onload="b()">
   <div class="navbar">
-  <a id="home" href="index.html">Home</a>
-  <div class="dropdown">
-    <button id="ls" class="dropbtn">links
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a id="ms" href="mods.html">mods</a>
-      <a id="ws" href="websites.html">websites</a>
-      <a id="sl" href="social.html">socials</a>
+    <a id="home" href="index.html">Home</a>
+    <div class="dropdown">
+      <button id="ls" class="dropbtn">Links ▾</button>
+      <div class="dropdown-content">
+        <a id="ms" href="mods.html">Mods</a>
+        <a id="ws" href="websites.html">Websites</a>
+        <a id="sl" href="social.html">Socials</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button id="bg" class="dropbtn">Backgrounds ▾</button>
+      <div class="dropdown-content">
+        <a id="gd" onclick="gold()">Gold</a>
+        <a id="be" onclick="blue()">Blue</a>
+        <a id="rd" onclick="red()">Red</a>
+        <a id="we" onclick="white()">White</a>
+        <a id="bk" onclick="black()">Black</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button id="lg" class="dropbtn">Lang ▾</button>
+      <div class="dropdown-content">
+        <a id="en" onclick="EN()">EN</a>
+        <a id="es" onclick="ES()">ES</a>
+        <a id="jp" onclick="JP()">JP</a>
+      </div>
+    </div>
   </div>
- </div>
- <div class="dropdown">
-    <button id="bg" class="dropbtn">backgrounds
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a id="gd" onclick="gold()">gold</a>
-      <a id="be" onclick="blue()">blue</a>
-      <a id="rd" onclick="red()">red</a>
-      <a id="we" onclick="white()">white</a>
-      <a id="bk" onclick="black()">black</a>
-  </div>
- </div>
-  <div class="dropdown">
-    <button id="lg" class="dropbtn">lang
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a id="en" onclick="EN()">EN</a>
-      <a id="es" onclick="ES()">ES</a>
-      <a id="jp" onclick="JP()">JP</a>
-  </div>
- </div>
-</div>
-<h1 id="h1" style="color:Tomato;"> This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai.</h1>
+
+  <h1 id="h1">This is the hub for mods made for Minecraft Bedrock Edition and website remakes by Funneljai.</h1>
 </body>
 </html>
